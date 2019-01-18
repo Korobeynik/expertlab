@@ -1,0 +1,332 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+@media screen and (min-width: 1500px)
+	header .container .bg2
+		top: 15%
+
+@media screen and (min-width: 1700px)
+	.works-content
+		padding-top: 20%
+	.works .works-bg2
+		top: -40%
+		left: -4%
+	.advantag .adv-bg
+		top: -130px		
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+
+
+@media screen and (max-width: 1200px)
+	body,html
+		overflow-x: hidden
+	.advantag .adv-bg
+		top: -80px
+	.works-content
+		flex-wrap: wrap
+		margin-bottom: 230px
+	.works-title
+		width: 100%
+		text-align: center
+		margin-bottom: 50px
+	.discount2
+		padding-left: 5%
+	.section-bg
+		top: -490px					
+
+// ≥768px
+@media screen and (max-width: 960px)
+	body,html
+		overflow-x: hidden
+	.advantag 
+		background-image: url(../img/advg-mobile.svg)
+		padding-top: 50px
+		.adv-bg
+			display: none
+	.s-title
+		text-align: center
+		font-size: 36px
+		line-height: 1.17
+		margin-bottom: 20px
+	.row.advantag-grid.owl-carousel.owl-loaded.owl-drag
+		margin: 0
+	.advantag-grid .advantag-item
+		flex-wrap: wrap
+		justify-content: center
+	.advantag-grid .advantag-item .item-icon
+		margin: 0
+		position: relative
+		margin-top: -100px
+		z-index: 5
+		margin-bottom: 15px
+	.owl-carousel .owl-stage
+		padding-top: 80px
+	.item-content
+		text-align: center
+	.advantag-grid .advantag-item
+		padding-bottom: 45px
+		border-radius: 15px
+		min-height: 335px
+	.owl-nav
+		display: none
+	.advantag	
+		.owl-dots
+			text-align: center
+			padding-top: 0px
+			.owl-dot
+				width: 12px
+				height: 12px
+				border-radius: 50%
+				background-color: #3a89db
+				margin: 0 4px
+				&.active
+					background-image: linear-gradient(to bottom, #fcb563, #ff8842)
+		.adv-bg
+			display: none
+		.adv-bg-mobile
+			display: block
+			position: absolute
+			width: 100%
+			top: -60px
+
+	.works .works-bg
+		left: -2px		
+
+	header
+		padding-bottom: 0
+		.container 
+			.bg2
+				display: none
+		.b1
+			display: none		
+		.bg1-mobile
+			display: block
+			position: absolute
+			top: 20%
+			left: -15%
+	header .bg1
+		display: none				
+	.logo-col
+		text-align: center
+		margin-bottom: 20px
+	.discount
+		text-align: center
+		font-size: 16px
+		margin-bottom: 25px
+		img
+			width: 28px
+			margin-right: 5px
+			position: relative
+			top: -2px
+	.main-title
+		font-size: 36px
+		text-align: center
+	.main-descr
+		font-size: 16px
+		padding-right: 0
+		text-align: center
+	form
+		flex-wrap: wrap
+		padding-top: 20px
+		input
+			max-width: 100%
+			margin: 0
+			margin-bottom: 15px
+		button
+			max-width: 100%
+	.form-descr
+		font-size: 16px
+		text-align: center							
+
+
+	.mobile-promo
+		display: block
+		max-width: 100%	
+
+	.works-content
+		padding: 0
+		padding-top: 90px
+		margin-bottom: 100px
+
+	.works-title
+		font-size: 32px
+
+	
+	.works-item 
+		&:nth-child(1)
+			.item-number
+				&:before
+					content: ''
+					display: block
+					width: 300px
+					height: 2px
+					z-index: -1
+					background-color: #fff
+					position: absolute
+					left: -100%
+					top: 49%
+		.item-number
+			position: relative
+			&:after
+				content: ''
+				display: block
+				width: 300px
+				height: 2px
+				z-index: -1
+				background-color: #fff
+				position: absolute
+				left: 0
+				top: 49%
+
+	.works
+		z-index: 2 
+		.works-bg2
+			display: none
+		.works-bg2-mobile
+			display: block
+			top: 0		
+
+	.works-grid
+		flex-wrap: nowrap
+		overflow-x: auto
+		position: relative
+		z-index: 10
+		padding-left: 50px
+	.section-bg
+		top: -130px
+		width: 50%
+		left: 50%
+		transform: translateX(-50%)
+	.works
+		.container
+			padding: 0
+	.works-grid		
+		.works-item
+			margin-bottom: 0
+			min-width: 230px
+			&.hidden
+				display: none	
+
+	.discount2
+		padding-left: 0
+		padding: 0 15px							
+									
+	.row.discount2-wrap
+		padding-top: 300px
+	.dicsout-title
+		font-size: 32px
+		text-align: center
+		line-height: 1.2
+		margin-bottom: 10px
+	.dicsout-text
+		text-align: center
+		font-size: 16px
+		margin-bottom: 15px	
+	.discount-form 
+		input
+			max-width: 100%
+		button
+			max-width: 100%
+
+	.footer-line
+		flex-wrap: wrap
+		justify-content: center
+		.email
+			margin-right: 30px
+			margin-bottom: 10px
+		.phone
+			margin-bottom: 20px	
+	.pay
+		margin-left: 0
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		span
+			font-family: 'Core Sans A 65'
+			display: block
+			width: 100%
+			text-align: center
+			margin-bottom: 10px
+
+
+	.slider-settings
+		display: none !important
+	.coaches-item
+		padding: 20px
+	.coaches-item .base-btn
+		left: 0
+	.slider	
+		.owl-dots
+			background: linear-gradient(to top, rgba(0,0,0,1) 19%,rgba(0,0,0,0.3) 64%,rgba(255,255,255,0) 100%)
+	.slider .owl-dots button.owl-dot.active:before
+		content: ''
+		display: block
+		position: absolute
+		width: 100%
+		height: 100%
+		left: 0
+		top: 2px
+		z-index: -1
+		background: radial-gradient(circle closest-side at 50% 50%,#f5a623,rgba(0,0,0,0))
+	.info-content
+		padding-top: 20px
+		margin-bottom: 50px
+	form 
+		input
+			box-shadow: 0 14px 40px 0 rgba(58,137,219,.2) !important
+			-webkit-appearance: none					  																																						
+
+
+// ≥576px
+@media screen and (max-width: 600px)
+	.section-bg
+		width: 80%
+	.footer-line .email
+		margin-right: 0	
+	.info
+		padding-top: 250px
+	.row.discount2-wrap
+		padding-top: 230px
+	.form-descr
+		margin-bottom: 20px
+	.row.discount2-wrap
+		padding-top: 210px		
+	form 
+		input
+			box-shadow: 0 14px 40px 0 rgba(58,137,219,.1) !important
+			-webkit-appearance: none 		
+	
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
+
+
+@media screen and (min-width: 1800px)
+	.slider 
+		.slider-item
+			height: 850px
+	.slider .owl-dots
+		bottom: 25%
+	.info
+		margin-top: -370px
+	.logo
+
+	.slider-settings
+		top: 75px					

@@ -1,0 +1,43 @@
+.container
+	max-width: 1225px
+
+.base-title
+	font-size: 50px
+	font-weight: bold
+	color: #fff
+	span
+		color: $orange	
+
+.base-btn
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 56px
+	width: 100%
+	max-width: 204px
+	border-radius: 28px
+	background-color: $blue
+	font-size: 12px
+	font-weight: bold
+	text-transform: uppercase
+	letter-spacing: 0.5px
+	border: none
+	color: #fff
+	transition: all 0.3s ease
+	&:hover
+		cursor: pointer
+		color: #fff
+		text-decoration: none
+		background: #295ba4
+	&.btn-large
+		max-width: 260px
+		height: 62px
+	&.btn-transparent
+		background-color: transparent
+		border: 2px solid #fff
+		&:hover
+			cursor: pointer
+			color: #fff
+			text-decoration: none
+			background: #295ba4
+			border: 2px solid #295ba4		
