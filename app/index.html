@@ -27,7 +27,10 @@
 </head>
 
 <body>
-	<header>
+	<header id="home">
+		<div class="humburger">
+    	<div class="burger"></div>
+  	</div>
 		<div class="container">
 			<img class="header-bg" src="img/student.png" alt="">
 			<div class="row header-top-row">
@@ -35,14 +38,16 @@
 					<div class="header-top">
 						<a href="#" class="logo"><img src="img/logo.svg" alt=""></a>
 						<div class="header-top-line">
+							<a href="#" class="logo-mobile"><img src="img/logo-mobile.svg" alt=""></a>
 							<nav>
-								<a href="#">Home</a>
-								<a href="#">What We Offer</a>
-								<a href="#">How We Work</a>
-								<a href="#">Why Choose Us</a>
+								<a href="#home">Home</a>
+								<a href="#offer">What We Offer</a>
+								<a href="#work">How We Work</a>
+								<a href="#choose">Why Choose Us</a>
 							</nav>
 							<a href="tel:1-855-407-7728" class="phone">
 								<img src="img/phone.svg" alt="">
+								<img class="phone-mobile" src="img/phone2.svg" alt="">
 								<span>1-855-407-7728</span>
 							</a>
 							<a href="#" class="button">check the price</a>
@@ -58,14 +63,14 @@
 						<h1 class="main-title">But we provide the help you need to complete It</h1>
 					</div>
 
-					<div class="col-12 col-md-8 form-wrap">
+					<div class="col-12 col-sm-12 col-md-8 form-wrap">
 						<form id="form">
 							<input type="text" placeholder="Title">
 							<input type="email" placeholder="Email">
 							<button>Check price</button>
 						</form>
 						<div class="form-descr">Tell us about your assignment, we’re here to help you get through it!</div>
-						<img src="img/promo.svg" alt="" class="mobile-promo">
+						<img src="img/student.png" alt="" class="mobile-promo">
 					</div>
 
 				</div>
@@ -73,7 +78,7 @@
 		</div> <!-- /container -->
 	</header>
 
-	<section class="advantag can-help">
+	<section class="advantag can-help" id="offer">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -141,8 +146,10 @@
 		</div>
 	</section>
 
-<section class="work">
+<section class="work" id="work">
 	<img class="work-bg" src="img/mask.png" alt="">
+	<img class="work-bg-m1" src="img/work-mobile.svg" alt="">
+	<img class="work-bg-m2" src="img/work-mobile2.svg" alt="">
 	<div class="container">
 		<img class="work-icon1" src="img/book.svg" alt="">
 		<img class="work-icon2" src="img/bottle.svg" alt="">
@@ -184,7 +191,7 @@
 </section>
 
 
-<section class="advantag choose-section">
+<section class="advantag choose-section" id="choose">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -257,11 +264,17 @@
 				<div class="col-12 col-md-6 advantag-item-wrap">
 					<div class="advantag-item">
 						<div class="item-icon">
-							<img src="img/c1.svg" alt="">
+							<div class="avatar">
+								<img src="img/f1.jpg" alt="">
+							</div>
+							<div class="rating">
+								<img src="img/star.svg" alt="">
+								<span>5</span>
+							</div>
+							<div class="name">John Shaw, <span>Computer Science Expert</span></div>
 						</div>
 						<div class="item-content">
-							<div class="item-title">Affordable Pricing</div>
-							<div class="item-text">Our prices let you save up to 50% off when directly hiring an expert.</div>
+							I completed my degree from the University of Pennsylvania. I know how challenging it was throughout my college years writing papers. It was always so hard generating creativity, while trying to stay on topic and receive a good grade. It’s very fulfilling helping students with their writing.
 						</div>
 					</div>
 				</div>
@@ -269,11 +282,17 @@
 				<div class="col-12 col-md-6 advantag-item-wrap">
 					<div class="advantag-item">
 						<div class="item-icon">
-							<img src="img/c2.svg" alt="">
+							<div class="avatar">
+								<img src="img/f2.jpg" alt="">
+							</div>
+							<div class="rating">
+								<img src="img/star.svg" alt="">
+								<span>4,5</span>
+							</div>
+							<div class="name">John Shaw, <span>Computer Science Expert </span></div>
 						</div>
 						<div class="item-content">
-							<div class="item-title">Plagiarism Free</div>
-							<div class="item-text">We have zero tolerance for plagiarism, which is why our experts will make sure they do not send you off with a paper that is plagiarized. </div>
+							I hold a Masters degree in English from the Columbia University, New York. I am currently working in one of the most prestigious language schools in the US and I must admit that sometimes it is really tricky for foreigners to learn English language. For this reason I love to help international students by proofreading their papers.
 						</div>
 					</div>
 				</div>
@@ -283,6 +302,8 @@
 	</section>
 
 	<section class="project-form">
+		<img class="project-bg1" src="img/fill-1-copy.svg" alt="">
+		<img class="project-bg2" src="img/fill-1.svg" alt="">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -297,6 +318,134 @@
 						<input type="email" placeholder="Email">
 						<button>Check the price</button>
 					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="reviews">
+		<div class="container">
+
+			<div id="l1" class="reviews-slider-link left s-77"><img src="img/f1.jpg" alt=""></div>
+			<div id="l2" class="reviews-slider-link left s-72"><img src="img/f2.jpg" alt=""></div>
+			<div id="l3" class="reviews-slider-link left s-65"><img src="img/f1.jpg" alt=""></div>
+			<div id="l4" class="reviews-slider-link left s-100"><img src="img/f2.jpg" alt=""></div>
+
+			<div id="l5" class="reviews-slider-link right s-77"><img src="img/f1.jpg" alt=""></div>
+			<div id="l6" class="reviews-slider-link right s-72"><img src="img/f2.jpg" alt=""></div>
+			<div id="l7" class="reviews-slider-link right s-65"><img src="img/f1.jpg" alt=""></div>
+			<div id="l8" class="reviews-slider-link right s-100"><img src="img/f2.jpg" alt=""></div>
+
+			<div class="row">
+				<div class="col-12">
+					<div class="s-title">Proven <span>Results</span></div>
+					<div class="s-description">We Strive to Always Keep Our Clients Happy</div>
+				</div>
+			</div>
+
+			<div class="reviews-slider">
+			  <ul>
+			    <li class="review-item">
+			    	<div class="review-avatar">
+			    		<img src="img/f1.jpg" alt="">
+			    	</div>
+			    	<div class="review-content">
+			    		<div class="review-name">Alicia Hudson, <span>, Students</span></div>
+			    		<div class="review-text">My tutor helped me with my task and let me do it by myself in the end, which was good for my future studies.</div>
+			    	</div>
+			    </li>
+			    <li class="review-item">
+			    	<div class="review-avatar">
+			    		<img src="img/f2.jpg" alt="">
+			    	</div>
+			    	<div class="review-content">
+			    		<div class="review-name">Alicia Hudson, <span>, Students</span></div>
+			    		<div class="review-text">My tutor helped me with my task and let me do it by myself in the end, which was good for my future studies.</div>
+			    	</div>
+			    </li>
+			    <li class="review-item">
+			    	<div class="review-avatar">
+			    		<img src="img/f2.jpg" alt="">
+			    	</div>
+			    	<div class="review-content">
+			    		<div class="review-name">Alicia Hudson, <span>, Students</span></div>
+			    		<div class="review-text">My tutor helped me with my task and let me do it by myself in the end, which was good for my future studies.</div>
+			    	</div>
+			    </li>
+			    <li class="review-item">
+			    	<div class="review-avatar">
+			    		<img src="img/f2.jpg" alt="">
+			    	</div>
+			    	<div class="review-content">
+			    		<div class="review-name">Alicia Hudson, <span>, Students</span></div>
+			    		<div class="review-text">My tutor helped me with my task and let me do it by myself in the end, which was good for my future studies.</div>
+			    	</div>
+			    </li>
+			    <li class="review-item">
+			    	<div class="review-avatar">
+			    		<img src="img/f2.jpg" alt="">
+			    	</div>
+			    	<div class="review-content">
+			    		<div class="review-name">Alicia Hudson, <span>, Students</span></div>
+			    		<div class="review-text">My tutor helped me with my task and let me do it by myself in the end, which was good for my future studies.</div>
+			    	</div>
+			    </li>
+			    <li class="review-item">
+			    	<div class="review-avatar">
+			    		<img src="img/f2.jpg" alt="">
+			    	</div>
+			    	<div class="review-content">
+			    		<div class="review-name">Alicia Hudson, <span>, Students</span></div>
+			    		<div class="review-text">My tutor helped me with my task and let me do it by myself in the end, which was good for my future studies.</div>
+			    	</div>
+			    </li>
+			  </ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="questions">
+		<img class="questions-bg" src="img/fill-1.png" alt="">
+		<img class="ask1" src="img/ask1.svg" alt="">
+		<img class="ask2" src="img/ask2.svg" alt="">
+		<div class="container">
+			<img class="questions-icon1" src="img/globus.svg" alt="">
+			<img class="questions-icon2" src="img/pen.svg" alt="">
+			<img class="questions-icon3" src="img/group-21.svg" alt="">
+			<div class="row">
+				<div class="col-12">
+					<div class="s-title">Frequently Asked <br> <span>Questions</span></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="acordion-grid">
+
+						<div class="acordion-item">
+							<div class="acordion-question">Why use ExpertLab?</div>
+							<div class="acordion-answer">Each  expert will offer you their individual pricing. Our experts do not work under intermediaries, so our prices will be at least 50% lower than anywhere else. </div>
+							<div class="acordion-arrow">
+								<img src="img/arrow-m.svg" alt="">
+							</div>
+						</div>
+
+						<div class="acordion-item">
+							<div class="acordion-question">How to select the right expert? </div>
+							<div class="acordion-answer">Each  expert will offer you their individual pricing. Our experts do not work under intermediaries, so our prices will be at least 50% lower than anywhere else. </div>
+							<div class="acordion-arrow">
+								<img src="img/arrow-m.svg" alt="">
+							</div>
+						</div>
+
+						<div class="acordion-item">
+							<div class="acordion-question">How much does it cost?</div>
+							<div class="acordion-answer">Each  expert will offer you their individual pricing. Our experts do not work under intermediaries, so our prices will be at least 50% lower than anywhere else. </div>
+							<div class="acordion-arrow">
+								<img src="img/arrow-m.svg" alt="">
+							</div>
+						</div>
+
+					</div>
 				</div>
 			</div>
 		</div>
@@ -332,6 +481,8 @@
 	</section>
 
 	<section class="project-form">
+		<img class="project-bg1" src="img/fill-1-copy.svg" alt="">
+		<img class="project-bg2" src="img/fill-1.svg" alt="">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">

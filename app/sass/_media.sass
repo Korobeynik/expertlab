@@ -38,12 +38,105 @@
 	.discount2
 		padding-left: 5%
 	.section-bg
-		top: -490px					
+		top: -490px
+	.header-top-line .button
+		display: none						
 
 // ≥768px
 @media screen and (max-width: 960px)
 	body,html
 		overflow-x: hidden
+	.header-content
+		width: 100%	
+	body
+		&.active
+			height: 100vh
+			overflow-y: hidden
+			.humburger
+				background-color: $green
+			.burger::after, .burger::before
+				background-color: #fff
+			.burger
+				background-color: #fff		
+			.header-top-line
+				transform: translateY(0%)
+				height: 100vh
+				display: flex
+				flex-direction: column
+				justify-content: flex-start
+				.phone
+					margin: 20px 0
+					font-size: 20px
+				.button
+					display: flex
+					max-width: 220px
+				nav
+					margin: 0
+					width: 100%
+					margin-top: 20%
+					a
+						display: block
+						text-align: center
+						margin: 0
+						font-size: 20px
+						margin-bottom: 15px
+				.logo-mobile
+					margin-top: 40px
+					width: 190px
+					margin-left: -100px
+					img
+						width: 100%
+			.logo
+				opacity: 0
+			.header-top-line .phone
+				color: $dark
+				img
+					display: none
+				.phone-mobile
+					display: inline-block	
+			.header-top-line img
+				width: auto			
+	.humburger
+		display: block
+		background-color: #fff
+		border-radius: 50%
+		overflow: hidden
+		z-index: 1001
+	header
+		background-image: url(../img/mobile.jpg)
+		background-position: center
+	header .container
+		padding-bottom: 0		
+	.logo-mobile
+		display: block
+	.logo
+		width: 210px
+	.header-top
+		margin-bottom: 50px
+	.main-title
+		padding-right: 0			
+	.header-top-line
+		background-color: #fff
+		width: 100%
+		color: $dark
+		position: absolute
+		left: 0
+		top: 0
+		right: 0
+		z-index: 1000
+		transform: translateY(-120%)
+		transition: all 0.4s ease	
+		img
+			width: 200px
+	.header-top-line
+		flex-wrap: wrap		
+	.header-top-line nav a
+		color: $dark
+	.header-top-line .button
+		display: flex
+		background-color: $green
+	.header-bg
+		display: none	
 	.advantag 
 		background-image: url(../img/advg-mobile.svg)
 		padding-top: 50px
@@ -51,9 +144,13 @@
 			display: none
 	.s-title
 		text-align: center
-		font-size: 36px
+		font-size: 26px
 		line-height: 1.17
 		margin-bottom: 20px
+	.item-title
+		display: flex	
+	.s-description
+		font-size: 18px	
 	.row.advantag-grid.owl-carousel.owl-loaded.owl-drag
 		margin: 0
 	.advantag-grid .advantag-item
@@ -67,12 +164,27 @@
 		margin-bottom: 15px
 	.owl-carousel .owl-stage
 		padding-top: 80px
+	section.advantag.can-help
+		.owl-carousel .owl-stage
+			padding-top: 20px	
 	.item-content
 		text-align: center
 	.advantag-grid .advantag-item
+		padding-top: 20px
 		padding-bottom: 45px
 		border-radius: 15px
+		box-shadow: 0 10px 40px 0 rgba(58,137,219,.1)
 		min-height: 335px
+	.advantag-grid .advantag-item .item-title
+		font-size: 20px
+		text-align: center
+		display: flex
+    justify-content: center
+		span
+			text-align: left
+		img
+			width: 50px
+			min-width: 50px	
 	.owl-nav
 		display: none
 	.advantag	
@@ -83,10 +195,11 @@
 				width: 12px
 				height: 12px
 				border-radius: 50%
-				background-color: #3a89db
+				background-color: $green
+				opacity: 0.2
 				margin: 0 4px
 				&.active
-					background-image: linear-gradient(to bottom, #fcb563, #ff8842)
+					opacity: 1
 		.adv-bg
 			display: none
 		.adv-bg-mobile
@@ -125,7 +238,7 @@
 			position: relative
 			top: -2px
 	.main-title
-		font-size: 36px
+		font-size: 26px
 		text-align: center
 	.main-descr
 		font-size: 16px
@@ -133,7 +246,6 @@
 		text-align: center
 	form
 		flex-wrap: wrap
-		padding-top: 20px
 		input
 			max-width: 100%
 			margin: 0
@@ -142,12 +254,16 @@
 			max-width: 100%
 	.form-descr
 		font-size: 16px
-		text-align: center							
+		text-align: center
+
+	#form2 .project
+		max-width: 100%								
 
 
 	.mobile-promo
 		display: block
-		max-width: 100%	
+		max-width: 100%
+		margin: 0 auto	
 
 	.works-content
 		padding: 0
@@ -156,6 +272,15 @@
 
 	.works-title
 		font-size: 32px
+
+	.acordion-item
+		margin-bottom: 10px	
+
+	.acordion-item .acordion-question
+		font-size: 14px
+	.acordion-item .acordion-arrow
+		right: 15px
+		top: 17px			
 
 	
 	.works-item 
@@ -248,11 +373,14 @@
 		flex-wrap: wrap
 		justify-content: center
 		span
-			font-family: 'Core Sans A 65'
 			display: block
 			width: 100%
 			text-align: center
 			margin-bottom: 10px
+	.pay .qiwi
+		display: none
+	.project-form .s-description
+		font-size: 18px			
 
 
 	.slider-settings
@@ -280,11 +408,161 @@
 	form 
 		input
 			box-shadow: 0 14px 40px 0 rgba(58,137,219,.2) !important
-			-webkit-appearance: none					  																																						
+			-webkit-appearance: none	
+	.work-icon1
+		display: none
+	.work-icon2
+		display: none
+	.work
+		background-color: $green
+		margin-top: 30px 
+		padding-top: 0
+		padding-bottom: 0
+		.work-bg
+			display: none
+		.work-bg-m1
+			position: absolute
+			top: -50px
+			left: -3px
+			right: -2px
+			width: 105%
+			display: block
+		.work-bg-m2
+			position: absolute
+			bottom: -59px
+			left: -4px
+			width: 110%
+			display: block	
+	.work .s-title
+		padding-top: 25px
+		padding-bottom: 20px
+	.work-item
+		text-align: center
+		margin-bottom: 30px
+	.work .work-content
+		justify-content: center
+	.work .work-content .work-text
+		font-size: 18px
+	.work .work-content .work-number
+		font-size: 60px
+	.work-item .item-arrow
+		transform: rotate(90deg)
+		top: 520px
+		left: 15%
+	.work-item .item-arrow2
+		transform: rotate(90deg)
+		top: -70px
+		right: 15%	
+
+	section.advantag.choose-section
+		padding-top: 90px
+		.owl-carousel .owl-stage
+			padding-top: 20px
+		.advantag-grid .advantag-item .item-icon
+			margin-top: 0	
+	.choose-section .advantag-item
+		padding: 10px
+
+	section.advantag.best-section
+		.owl-carousel .owl-stage
+			padding-top: 40px
+		.advantag-grid .advantag-item .item-icon
+			flex-wrap: wrap
+			margin-top: 0
+			justify-content: center
+			.avatar
+				margin-top: -40px
+			.rating
+				img
+					width: 12px		
+	.best-section .advantag-item .item-icon .rating
+		left: 55%
+		top: -10px
+	.best-section .advantag-item .item-icon .name
+		padding-top: 0
+		text-align: center
+	.best-section .advantag-item
+		padding: 20px
+	.reviews-slider-link
+		display: none	
+	.review-text
+		font-size: 14px
+		padding:  0 10%
+	.cardslider__direction-nav button
+		width: 30px
+		height: 30px
+	.cardslider__nav-prev
+		background-size: 8px
+		left: -10px
+	.cardslider__nav-next
+		right: -10px
+		background-size: 8px
+	.review-avatar
+		width: 90px
+		height: 90px
+	.questions .questions-bg
+		display: none	
+	.questions
+		background-color: #f2fcfb
+	.questions .questions-icon1,
+	.questions .questions-icon2,
+	.questions .questions-icon3
+		display: none	
+	.questions
+		padding-top: 40px
+		padding-bottom: 0
+		.ask1
+			display: block
+			width: 100%
+			position: absolute
+			top: -20px
+			width: 100%
+		.ask2
+			display: block
+			width: 100%
+			position: absolute
+			bottom: -20px
+			width: 100%
+	.acordion-grid
+		margin-top: 20px
+		margin-bottom: 20px
+	section.advantag.press-section
+		.owl-carousel .owl-stage
+			padding-top: 0
+		.advantag-grid .advantag-item
+			min-height: 190px
+			padding: 0
+	.press-section .advantag-item img
+		width: auto								
+
+																
 
 
 // ≥576px
 @media screen and (max-width: 600px)
+	.advantag-grid .advantag-item .item-title
+		justify-content: center
+	section.advantag.can-help
+		.advantag-grid .advantag-item
+			min-height: 260px
+	.best-section .advantag-item .item-icon .rating
+		left: 58%
+	section.advantag.choose-section
+		//padding-top: 20px
+	.work	
+		.work-bg-m1
+			position: absolute
+			top: -28px
+			left: 0
+			width: 100%
+			display: block
+	.work	
+		.work-bg-m2
+			position: absolute
+			bottom: -29px
+			left: -4px
+			width: 110%
+			display: block	
 	.section-bg
 		width: 80%
 	.footer-line .email
@@ -296,7 +574,15 @@
 	.form-descr
 		margin-bottom: 20px
 	.row.discount2-wrap
-		padding-top: 210px		
+		padding-top: 210px
+	.work-item .item-arrow
+		transform: rotate(90deg)
+		top: 520px
+		left: -50px
+	.work-item .item-arrow2
+		transform: rotate(90deg)
+		top: -70px
+		right: -50px			
 	form 
 		input
 			box-shadow: 0 14px 40px 0 rgba(58,137,219,.1) !important

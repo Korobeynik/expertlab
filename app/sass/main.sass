@@ -96,6 +96,8 @@ header
 		margin-right: 25px
 		font-size: 16px
 		color: #fff
+		.phone-mobile
+			display: none
 		&:hover
 			color: #fff
 	.button
@@ -123,7 +125,10 @@ header
 	width: 243px
 	display: inline-block
 	img
-		width: 100%	
+		width: 100%
+
+.logo-mobile
+	display: none			
 
 
 .title-wrap
@@ -259,6 +264,128 @@ section
 		box-shadow: 0 10px 40px 0 rgba(58, 137, 219, 0.1)
 		border-radius: 5px
 
+.best-section
+	padding-top: 0
+	.advantag-grid
+		margin-top: 80px
+	.advantag-item
+		padding: 40px
+		box-shadow: 0 10px 40px 0 rgba(58, 137, 219, 0.1)
+		border-radius: 5px
+		flex-wrap: wrap
+		flex-direction: column
+		.item-content
+			padding-top: 20px
+		.item-icon
+			margin: 0
+			width: 100%
+			display: flex
+			position: relative
+			margin-top: -80px
+			max-height: 101px
+			.name
+				font-size: 18px
+				font-weight: bold
+				color: $green
+				width: 100%
+				margin-left: 15px
+				padding-top: 45px	
+				span
+					color: $dark
+					font-size: 16px
+					font-weight: 500
+					display: block
+					width: 100%
+			.rating
+				position: absolute
+				left: 65px
+				top: 10px
+				width: 45px
+				height: 23px
+				background-color: $orange
+				border-radius: 12.5px
+				border: 2px solid #fff
+				color: #fff
+				font-size: 12px
+				font-weight: bold
+				justify-content: center
+				display: flex
+				img
+					margin-right: 4px
+			.avatar
+				min-width: 87px
+				width: 87px
+				height: 87px
+				border-radius: 50%
+				overflow: hidden
+				border: 3px solid #fff
+				box-shadow: 0 10px 40px 0 rgba(58, 137, 219, 0.1)
+				img
+					max-width: 100%
+					height: 100%
+					width: 100%
+
+
+.questions
+	position: relative
+	padding-bottom: 100px
+	padding-top: 100px
+	.ask1,
+	.ask2
+		display: none
+	.questions-icon1
+		position: absolute
+		left: 50px
+		top: -50px
+	.questions-icon2
+		position: absolute
+		right: 0
+		top: -50px	
+	.questions-icon3
+		position: absolute
+		left: 0
+		bottom: -50px		
+	.questions-bg
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+	.container
+		position: relative
+
+.acordion-grid
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-wrap: wrap
+	margin-bottom: 100px
+	margin-top: 40px
+.acordion-item
+	max-width: 912px
+	width: 100%
+	background-color: #fff
+	margin-bottom: 25px
+	box-shadow: 0 10px 40px 0 rgba(58, 137, 219, 0.1)
+	position: relative
+	&.active
+		.acordion-arrow
+			transform: rotate(90deg)
+	.acordion-question
+		font-size: 18px
+		font-weight: 500
+		padding: 20px 30px
+		&:hover
+			cursor: pointer
+	.acordion-answer
+		font-size: 16px
+		font-weight: 300
+		padding: 0px 30px 20px
+		display: none
+	.acordion-arrow
+		position: absolute
+		right: 25px
+		top: 22px		
 
 .item-text
 	font-size: 16px
@@ -280,6 +407,8 @@ section
 		top: 0
 		width: 100%
 		height: 100%
+	.work-bg-m1,.work-bg-m2
+		display: none	
 	.work-content
 		display: flex
 		align-items: center
@@ -329,7 +458,15 @@ section
 .project-form
 	background-color: $green
 	padding-bottom: 40px
-	background-image: url(../img/p1.svg) no-repeat, url(images/pattern-right.png) 100% 0 no-repeat
+	position: relative
+	.project-bg1
+		left: 0
+		bottom: 0
+		position: absolute
+	.project-bg2
+		right: 0
+		top: 0
+		position: absolute	
 	.s-title
 		color: #fff
 	.s-description
@@ -500,6 +637,186 @@ section
 			top: 0%
 			z-index: 2	
 
+section.reviews
+	background-color: #fff
+	padding-bottom: 50px
+	position: relative
+	.container
+		position: relative
+
+.cardslider
+	overflow: inherit
+
+.reviews-slider
+	height: 400px
+	margin: auto
+	margin-bottom: 50px
+	margin-top: 45px
+	max-width: 815px
+	position: relative
+
+.cardslider__dots-nav
+	bottom: -50px
+	z-index: 10
+
+.cardslider__dot-btn
+	width: 12px
+	height: 12px
+	border: none
+	background-color: $green
+	opacity: 0.2
+	&:focus
+		outline: none
+
+.cardslider__dot.cardslider__dot--active
+	.cardslider__dot-btn
+		opacity: 1		
+
+.cardslider__dot-btn::before
+	display: none		
+
+
+.review-item
+	text-align: center
+
+.review-avatar
+	display: inline-block
+	width: 115px
+	height: 115px
+	border-radius: 50%
+	overflow: hidden
+	border: 5px solid #fff
+	box-shadow: 0 10px 40px 0 rgba(58, 137, 219, 0.2)
+	margin-top: -30px
+	margin-bottom: 20px
+	img
+		max-width: 100%
+		height: 100%
+
+.review-name
+	color: $green
+	font-size: 21px
+	font-weight: bold
+	margin-bottom: 12px
+	span
+		color: $dark
+		font-weight: 300
+
+.review-text
+	color: $dark
+	font-size: 21px
+	font-weight: 400
+	padding: 0 20%		
+
+.reviews-slider-link
+	border-radius: 50%
+	overflow: hidden
+	display: inline-block
+	position: absolute
+	&:hover
+		cursor: pointer
+	img
+		max-width: 100%
+		height: 100%
+	&.s-77
+		width: 77px
+		height: 77px
+	&.s-72
+		width: 72px
+		height: 72px
+	&.s-65
+		width: 65px
+		height: 65px
+	&.s-100
+		width: 100px
+		height: 100px			
+
+
+div#l4
+	rigt: 0
+	top: 0
+div#l8
+	right: 0
+	top: 20%	
+div#l5
+	right: -100px
+	top: 48%
+div#l6
+	right: 30px
+	top: 50%
+div#l7
+	bottom: 0
+	right: 80px	
+
+div#l1
+	left: 0
+	top: 20%
+div#l2
+	right: 0
+	bottom: 0	
+div#l3
+	left: -100px
+	top: 48%
+div#l4
+	left: 30px
+	top: 50%
+div#l7
+	bottom: 0
+	left: 80px			
+
+// .cardslider__cards
+// 	box-shadow: 0 10px 40px 0 rgba(192, 192, 192, 0.3)
+.cardslider__cards
+	width: 100%
+.cardslider__card
+	border-radius: 5px
+	background-color: #fff
+	box-shadow: 0 10px 40px 0 rgba(192, 192, 192, 0.2)
+	//box-shadow: 0 10px 40px 0 rgba(58, 137, 219, 0.1)
+
+.cardslider--direction-up .cardslider__card--index-0
+	box-shadow: 0 10px 40px 0 rgba(192, 192, 192, 0.3)	
+
+.cardslider__direction-nav
+	button
+		width: 48px
+		height: 48px
+		box-shadow: 0 10px 40px 0 rgba(58, 137, 219, 0.1)
+
+.cardslider__nav-next
+	background-image: url(../img/slider-arrow-g.svg)
+	background-position: 50% 50%
+	background-size: 10px
+	background-color: #fff
+	position: absolute
+	right: -23px
+	&:focus
+		outline: none
+	&:hover
+		cursor: pointer	
+.cardslider__nav-prev
+	background-image: url(../img/slider-arrow-g.svg)
+	background-position: 50% 50%
+	background-size: 10px
+	transform: rotate(180deg)
+	background-color: #fff
+	position: absolute
+	left: -23px
+	&:focus
+		outline: none
+	&:hover
+		cursor: pointer
+	&:active
+		transform: rotate(180deg)	scale(0.8)		
+
+.cardslider__direction-nav
+	width: 100%
+	top: 45%
+	left: 0
+
+
+.no-center
+	display: block
 
 
 
